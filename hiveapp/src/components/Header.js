@@ -16,7 +16,8 @@ const styles = {
     height: 40,
     width: 550,
     padding: 15,
-    borderRadius: 60
+    borderRadius: 60,
+    paddingRight: 100
 
   },
   buttonStyle: {
@@ -38,6 +39,9 @@ const styles = {
     fontWeight: "bold",
     letterSpacing: 30,
     textAlign: "center"
+  },
+  searchButton: {
+    marginLeft: -100
   }
 };
 
@@ -45,10 +49,10 @@ const styles = {
 
 function Header() {
   return (
-    <header style={styles.headerStyle} className="header mt-2">
-      <div style={styles.inputBox} class="input">
+    <header style={styles.headerStyle} class="container">
+      <div style={styles.inputBox} class="">
         <input style={styles.inputStyle} type="text" class="form-control mt-5" placeholder="First Name" aria-label="Recipient's username" aria-describedby="button-addon2"></input>
-        <div class="input-group-append">
+        <div style={styles.searchButton} class="input-group-append">
           <button style={styles.buttonStyle} class="btn btn-outline-secondary mt-5" type="button" id="button-addon2">Search</button>
         </div>
       </div>
