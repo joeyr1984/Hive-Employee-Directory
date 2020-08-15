@@ -4,84 +4,96 @@
       "name": "Jackie Brown",
       "image": "./images/Jackie.svg",
       "occupation": "Chief Executive Officer",
-      "phone": "555-867-5309"
+      "phone": "555-867-5309",
+      "email": "jbrown@bunker.com"
     },
     {
       "id": 2,
       "name": "Mia Wallace",
       "image": "./images/Mia.svg",
       "occupation": "Director Human Resources",
-      "phone": "555-867-3509"
+      "phone": "555-867-3509",
+      "email": "mwallace@bunker.com"
     },
     {
       "id": 3,
       "name": "Beatrix Kiddo",
       "image": "./images/Beatrix.svg",
       "occupation": "Full Stack Dev",
-      "phone": "555-867-9035"
+      "phone": "555-867-9035",
+      "email": "bkiddo@@bunker.com"
     },
     {
       "id": 4,
       "name": "O'ren Ishii",
       "image": "./images/O'ren.svg",
       "occupation": "Full Stack Dev",
-      "phone": "555-867-0953"
+      "phone": "555-867-0953",
+      "email": "oishii@bunker.com"
     },
     {
       "id": 5,
       "name": "Vernita Greene",
       "image": "./images/Vernita.svg",
       "occupation": "Head of Finance",
-      "phone": "555-867-0952"
+      "phone": "555-867-0952",
+      "email": "vgreene@bunker.com"
     },
     {
       "id": 6,
       "name": "Vincent Vega",
       "image": "./images/Vincent.svg",
       "occupation": "Maintenance",
-      "phone": "555-867-0900"
+      "phone": "555-867-0900",
+      "email": "vvega@bunker.com"
     },
     {
       "id": 7,
       "name": "Jules Winnfield",
       "image": "./images/Jules.svg",
       "occupation": "Maintenance",
-      "phone": "555-867-0900"
+      "phone": "555-867-0900",
+      "email": "jwinnfield@bunker.com"
     },
     {
       "id": 8,
       "name": "Steve Pink",
       "image": "./images/Steve.svg",
       "occupation": "Head of Security",
-      "phone": "555-867-0100"
+      "phone": "555-867-0100",
+      "email": "spink@bunker.com"
     },
     {
       "id": 9,
       "name": "Michael Blonde",
       "image": "./images/Blonde.svg",
       "occupation": "Legal",
-      "phone": "555-867-0230"
+      "phone": "555-867-0230",
+      "email": "mblonde@bunker.com"
     },
     {
       "id": 10,
       "name": "Marsellus Wallace",
       "image": "./images/Marcellus.svg",
       "occupation": "VP of Sales",
-      "phone": "555-867-0290"
+      "phone": "555-867-0290",
+      "email": "mwallace2@bunker.com"
     },
     {
       "id": 11,
       "name": "Harvey Wolfe",
       "image": "./images/Harvey.svg",
       "occupation": "VP of Marketing",
-      "phone": "555-867-0666"
+      "phone": "555-867-0666",
+      "email": "hwolfe@bunker.com"
     },
     {
       "id": 12,
       "name": "Julia Poitier",
       "image": "./images/Julia.svg",
       "occupation": "Director of Recruiting",
-      "phone": "555-867-0666"
+      "phone": "555-867-0666",
+      "email": "jpoitier@bunker.com"
     }
   ]
   

@@ -1,16 +1,39 @@
-import React from "react";
+import React, { Component } from "react";
 import Header from "./components/Header";
-import Section from "./components/Section";
+import TableRow from "./components/TableRow";
 import Navbar from "./components/Navbar";
+import Table from "./components/Table";
+import employees from "./employee.json";
 
-function App() {
-  return (
-    <div>
+
+class App extends Component {
+  state = {
+    employees
+  };
+
+  render() {
+
+    return (
+<div>
       <Navbar />
-      <Header />
-      <Section />
-    </div>
+      <Header />   
+      <Table>
+        {this.state.employees.map(employee => (
+          <TableRow
+        
+            key={employee.id}
+            image={employee.image}
+            name={employee.name}
+            occupation={employee.occupation}
+            email={employee.email}
+            phone={employee.phone}
+          />
+        ))}
+     
+      </Table>
+      </div>
   );
+  }
 }
 
 export default App;
