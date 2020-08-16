@@ -18,7 +18,7 @@ https://joeyr1984.github.io/Hive-Employee-Directory/
 
 ## Mock up / Ideation Phase 
 
-![Hive Logo](public/images/mock-up.png)
+![Hive Logo](public/images/mock-up.svg)
 
 
 
