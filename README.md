@@ -1,5 +1,5 @@
 
-![Hive Logo](hiveapp/public/images/logo-readme.png)
+![Hive Logo](public/images/logo-readme.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/)
 
@@ -10,13 +10,15 @@
 
 ## Link to Deployed App 
 
+https://joeyr1984.github.io/Hive-Employee-Directory/
+
 ## GIF of Working App
 
-![Hive Logo](hiveapp/public/images/hive.gif)
+![Hive Logo](public/images/hive.gif)
 
 ## Mock up / Ideation Phase 
 
-![Hive Logo](hiveapp/public/images/mock-up.png)
+![Hive Logo](public/images/mock-up.png)
 
 
 
