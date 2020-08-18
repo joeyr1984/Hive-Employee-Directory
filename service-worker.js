@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Hive-Employee-Directory/precache-manifest.aebcccad844ae798a907ba96dc66af78.js"
+  "/Hive-Employee-Directory/precache-manifest.aaa3d50d5bb0cf22df2678f7611dce1b.js"
 );
 
 self.addEventListener('message', (event) => {
