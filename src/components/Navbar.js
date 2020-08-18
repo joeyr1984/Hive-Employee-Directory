@@ -19,7 +19,7 @@ const styles = {
 function Navbar() {
   return (
     <nav style={styles.navbarStyle} className="navbar">
-      <img style={styles.logoStyle}src="./images/hive-logo.svg" alt="logo for Hive Employee directory"></img>
+      <img style={styles.logoStyle} src="./images/hive-logo.svg" alt="logo for Hive Employee directory"></img>
     </nav>
   );
 }

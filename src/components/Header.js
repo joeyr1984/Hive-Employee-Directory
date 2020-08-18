@@ -1,7 +1,11 @@
-import React from "react";
-import "../styles/Header.css";
+import React, { Component, useState } from "react";
+import TableRow from "./TableRow";
+import Table from "./Table";
+import employees from "../employee.json";
 
 
+
+let rows = [];
 const styles = {
   headerStyle: {
     background: "white",
@@ -47,18 +51,67 @@ const styles = {
 
 // We use JSX curly braces to evaluate the style object
 
-function Header() {
+class Header extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      initial: employees,
+      updated: employees
+    };
+
+    
+  }
+
+  filteredList = (e) => {
+    let updatedList = this.state.initial;
+    updatedList = updatedList.filter(obj => {
+     return obj.name.toLowerCase().search(
+        e.target.value.toLowerCase()
+      ) !== -1;
+    });
+    //state.updated = updatedList
+    this.setState({
+      updated: updatedList
+    })
+    console.log(updatedList);
+    
+  }
+
+
+
+render() {
+
   return (
-    <header style={styles.headerStyle} class="container">
-      <div style={styles.inputBox} class="">
-        <input style={styles.inputStyle} type="text" class="form-control mt-5" placeholder="First Name" aria-label="Recipient's username" aria-describedby="button-addon2"></input>
-        <div style={styles.searchButton} class="input-group-append">
-          <button style={styles.buttonStyle} class="btn btn-outline-secondary mt-5" type="button" id="button-addon2">Search</button>
+    <>
+      <header style={styles.headerStyle} class="container">
+        <div style={styles.inputBox} class="">
+          <input onChange={this.filteredList}style={styles.inputStyle} type="text" class="form-control mt-5" 
+          placeholder="First Name" aria-label="Recipient's username" aria-describedby="button-addon2"></input>
+          <div style={styles.searchButton} class="input-group-append">
+            <button style={styles.buttonStyle} class="btn btn-outline-secondary mt-5" type="button" id="button-addon2">Search</button>
+          </div>
         </div>
-      </div>
-      <h1 style={styles.h1} class="mt-5">DIRECTORY</h1>
-    </header>
+        <h1 style={styles.h1} class="mt-5">DIRECTORY</h1>
+      </header>
+
+      <Table>
+        {this.state.updated.map(employee => (
+          <TableRow
+
+            key={employee.id}
+            image={employee.image}
+            name={employee.name}
+            occupation={employee.occupation}
+            email={employee.email}
+            phone={employee.phone}
+          />
+        ))}
+{rows}
+      </Table>
+    </>
   );
+}
 }
 
 export default Header;
